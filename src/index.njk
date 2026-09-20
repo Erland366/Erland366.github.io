@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+---
+<section class="intro" aria-labelledby="intro-title">
+  <div class="intro-copy">
+    <p class="eyebrow">Machine learning systems</p>
+    <h1 id="intro-title"><strong>Erland</strong> Hilman Fuadi<span class="name-dot">.</span></h1>
+    <p class="lead">I’m a Research Engineer at MBZUAI,<br class="desktop-break"> working on ML systems.</p>
+    <p>My main focus is <strong>cross-vendor mismatches between AMD and NVIDIA GPU platforms</strong>.</p>
+    <p>I started by working on language model architectures and training objectives, keeping their systems implications in mind. Through that work, I found myself most drawn to the systems questions: how we organize computation, use memory, and make training more efficient.</p>
+    <p>Those questions now guide my ML systems research. I’m looking for <strong>PhD opportunities in ML systems</strong>, bringing a perspective shaped by my work on language models and GPU platforms.</p>
+  </div>
+  <figure class="portrait"><img src="/assets/profile.jpg" alt="Erland Hilman Fuadi" width="2000" height="2800" fetchpriority="high"><figcaption>Erland Hilman Fuadi</figcaption></figure>
+</section>
+<aside class="availability"><span class="status-dot" aria-hidden="true"></span><p><strong>Seeking a PhD in ML systems</strong><span>Efficient &amp; distributed training.</span></p><a href="mailto:{{ site.email }}">Get in touch <span aria-hidden="true">↗</span></a></aside>
+<section class="section" aria-labelledby="research-title">
+  <div class="section-heading"><h2 id="research-title">Research interests</h2><span class="section-index" aria-hidden="true">01</span></div>
+  <div class="research-grid">
+    <div><h3>Cross-vendor ML systems</h3><p>Understanding and addressing mismatches between AMD and NVIDIA GPU platforms.</p></div>
+    <div><h3>Efficient training</h3><p>Distributed training, parallelism, and using compute more effectively as models scale.</p></div>
+    <div><h3>Algorithms &amp; systems</h3><p>Understanding how training algorithms and system configurations interact, and designing them together.</p></div>
+  </div>
+</section>
+<section class="section" aria-labelledby="selected-title">
+  <div class="section-heading"><h2 id="selected-title">Selected publications</h2><a class="subtle-link" href="/publications/">All publications <span aria-hidden="true">↗</span></a></div>
+  <div class="publication-list">{% for paper in publications %}{% if paper.selected %}{% include 'partials/publication.njk' %}{% endif %}{% endfor %}</div>
+</section>
+<section class="section" aria-labelledby="writing-title">
+  <div class="section-heading"><h2 id="writing-title">Notes &amp; writing</h2><a class="subtle-link" href="/blog/">Visit the blog <span aria-hidden="true">↗</span></a></div>
+  {% if collections.posts.length %}{% for post in collections.posts %}{% if loop.index <= 3 %}<article class="post-row"><time datetime="{{ post.date | isoDate }}">{{ post.date | displayDate }}</time><div><h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3><p>{{ post.data.description }}</p></div></article>{% endif %}{% endfor %}
+  {% else %}<div class="writing-empty"><span class="writing-mark" aria-hidden="true">✳</span><div><h3>A research notebook, in the making.</h3><p>Notes on ML systems, efficient training, and the systems questions behind language model research. First posts coming soon.</p></div></div>{% endif %}
+</section>

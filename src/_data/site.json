@@ -1,0 +1,20 @@
+{
+  "name": "Erland Hilman Fuadi",
+  "shortName": "Erland",
+  "blogAuthor": "Erland Hilman Fuadi (Edd)",
+  "url": "https://erland366.github.io",
+  "description": "Erland Hilman Fuadi — Research Engineer at MBZUAI working on ML systems and cross-vendor mismatches between AMD and NVIDIA. Seeking a PhD in ML systems.",
+  "email": "erland.hilman366@gmail.com",
+  "scholar": "https://scholar.google.com/citations?user=7sEkbDsAAAAJ&hl=en",
+  "github": "https://github.com/Erland366",
+  "linkedin": "https://www.linkedin.com/in/erland-hilman/",
+  "twitter": "https://x.com/erla_ndpg",
+  "wechat": "",
+  "interests": ["Cross-vendor ML systems (AMD and NVIDIA)", "Efficient & distributed training", "Algorithm–system co-design", "Language model architectures & training objectives"],
+  "navigation": [
+    { "label": "About", "url": "/" },
+    { "label": "Publications", "url": "/publications/" },
+    { "label": "Blog", "url": "/blog/" },
+    { "label": "Experience", "url": "/experience/" }
+  ]
+}

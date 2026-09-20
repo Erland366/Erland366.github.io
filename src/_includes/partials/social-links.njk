@@ -1,0 +1,16 @@
+{% set profiles = [
+  { icon: 'email', label: 'Email', url: 'mailto:' + site.email },
+  { icon: 'scholar', label: 'Google Scholar', url: site.scholar },
+  { icon: 'github', label: 'GitHub', url: site.github },
+  { icon: 'linkedin', label: 'LinkedIn', url: site.linkedin },
+  { icon: 'twitter', label: 'Twitter / X', url: site.twitter },
+  { icon: 'rss', label: 'Blog RSS feed', url: '/feed.xml' },
+  { icon: 'wechat', label: 'WeChat', url: site.wechat }
+] %}
+<div class="social-icons" role="group" aria-label="Contact and profiles">
+  {% for profile in profiles %}{% if profile.url %}
+    <a class="social-icon" href="{{ profile.url }}" aria-label="{{ profile.label }}" title="{{ profile.label }}">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/social-icons.svg#{{ profile.icon }}"/></svg>
+    </a>
+  {% endif %}{% endfor %}
+</div>

@@ -1,0 +1,17 @@
+<article class="publication" id="{{ paper.id }}" data-publication data-kind="{{ paper.kind }}">
+  <div class="publication-label">
+    {% if paper.image %}<a class="publication-thumbnail" href="{{ paper.poster or paper.paper }}" aria-label="View {% if paper.poster %}poster{% else %}paper{% endif %}: {{ paper.title }}"><img src="{{ paper.image }}" alt="{{ paper.imageAlt }}" width="{{ paper.imageWidth }}" height="{{ paper.imageHeight }}" loading="lazy" decoding="async"></a>{% endif %}
+    <div class="publication-meta"><span class="venue{% if paper.kind == 'Preprint' %} preprint{% endif %}">{{ paper.venue }}</span><span class="publication-year">{{ paper.year }}</span></div>
+  </div>
+  <div class="publication-body">
+    <h{{ paperHeading or 3 }}><a href="{{ paper.paper }}">{{ paper.title }}</a></h{{ paperHeading or 3 }}>
+    <p class="authors">{% for author in paper.authors %}{% if author == site.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+    <p class="paper-summary">{{ paper.summary }}</p>
+    <div class="paper-links">
+      <a href="{{ paper.paper }}">{% if paper.kind == 'Preprint' %}Preprint{% else %}Paper{% endif %}<span class="sr-only">: {{ paper.title }}</span></a>
+      {% if paper.pdf %}<a href="{{ paper.pdf }}">PDF<span class="sr-only">: {{ paper.title }}</span></a>{% endif %}
+      {% if paper.code %}<a href="{{ paper.code }}">Code<span class="sr-only">: {{ paper.title }}</span></a>{% endif %}
+      {% if paper.poster %}<a href="{{ paper.poster }}">Poster<span class="sr-only">: {{ paper.title }}</span></a>{% endif %}
+    </div>
+  </div>
+</article>

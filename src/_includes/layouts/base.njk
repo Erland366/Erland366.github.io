@@ -1,0 +1,51 @@
+{% set pageAuthor = site.blogAuthor if isPost or isBlog else site.name %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ pageAuthor }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="author" content="{{ pageAuthor }}">
+  {% if previewDrafts %}<meta name="robots" content="noindex, nofollow">{% endif %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="{{ site.twitter | replace('https://x.com/', '@') }}">
+  {% if isPost %}<meta property="article:author" content="{{ site.twitter }}">{% endif %}
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} — Blog" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/theme.js"></script>
+  <script src="/assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      {% include 'partials/social-links.njk' %}
+      <nav class="main-navigation" aria-label="Main navigation">
+        {% for item in site.navigation %}
+          <a href="{{ item.url }}" {% if page.url == item.url or (isPost and item.url == '/blog/') %}aria-current="page"{% endif %}>{{ item.label }}</a>
+        {% endfor %}
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Use dark theme" hidden>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+      </button>
+    </div>
+  </header>
+  <main id="main" class="page-shell{% if isPost %} post-shell{% endif %}">
+    {% if previewDrafts %}<aside class="preview-banner">Draft preview · unpublished writing is visible here.</aside>{% endif %}
+    {{ content | safe }}
+  </main>
+  <footer class="site-footer">
+    <div><span>© {{ buildYear }} {{ site.name }}</span><span class="footer-note">A place for research &amp; ideas.</span></div>
+    {% include 'partials/social-links.njk' %}
+  </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "erland-research-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/clean-output.mjs && eleventy",
+    "dev": "eleventy --serve --port=8080",
+    "preview:drafts": "PREVIEW_DRAFTS=true eleventy --serve --port=8081 --output=_drafts",
+    "check": "npm run build && node scripts/check-site.mjs"
+  },
+  "devDependencies": { "@11ty/eleventy": "3.1.6" }
+}

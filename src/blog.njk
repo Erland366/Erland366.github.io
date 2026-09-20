@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+title: Blog
+description: Notes by Erland Hilman Fuadi (Edd) on ML systems, efficient training, and the systems questions behind language model research.
+isBlog: true
+permalink: /blog/index.html
+---
+<header class="page-heading"><p class="eyebrow">Thinking out loud</p><h1>Notes &amp; writing<span class="name-dot">.</span></h1><p class="byline">By {{ site.blogAuthor }}</p><p>A space to work through ML systems ideas, unpack papers,<br class="desktop-break"> and explore what makes model training efficient.</p><a class="subtle-link" href="/feed.xml">Subscribe via RSS <span aria-hidden="true">↗</span></a></header>
+{% if collections.posts.length %}
+<div class="post-list">{% for post in collections.posts %}<article class="post-row"><time datetime="{{ post.date | isoDate }}">{{ post.date | displayDate }}</time><div>{% if post.data.draft %}<span class="draft-label">Draft</span>{% endif %}<h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2><p>{{ post.data.description }}</p><span class="post-meta">{{ post.templateContent | readingTime }} min read{% if post.data.topic %} · {{ post.data.topic }}{% endif %}</span></div></article>{% endfor %}</div>
+{% else %}
+<section class="empty-state"><span class="empty-number" aria-hidden="true">01 /</span><h2>Every idea starts with a note.</h2><p>The first entry is still to come. I plan to write about efficient and distributed training, and how choices in model architecture and training objectives interact with the systems that run them.</p><div class="topic-list"><span>ML systems</span><span>Efficient training</span><span>Paper walkthroughs</span></div></section>
+{% endif %}
+<aside class="closing-note">Have a paper or a question you’d like to discuss? <a href="mailto:{{ site.email }}">Send me a note.</a></aside>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://erland366.github.io/sitemap.xml

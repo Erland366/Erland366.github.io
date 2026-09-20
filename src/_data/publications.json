@@ -1,0 +1,134 @@
+[
+  {
+    "id": "copus",
+    "title": "COPUS: Co-adaptive Parallelism and Batch Size Selection in Large Language Model Training",
+    "authors": [
+      "Akhmed Sakip",
+      "Erland Hilman Fuadi",
+      "Omar Sayedelahl",
+      "Zonghang Li",
+      "Jianshu She",
+      "Alham Fikri Aji",
+      "Steve Liu",
+      "Eric Xing",
+      "Qirong Ho"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "kind": "Preprint",
+    "selected": true,
+    "summary": "Jointly adapting batch size and parallelism to improve useful training progress per unit of time.",
+    "paper": "https://arxiv.org/abs/2604.26687",
+    "pdf": "https://arxiv.org/pdf/2604.26687"
+  },
+  {
+    "id": "token-order-prediction",
+    "title": "Predicting the Order of Upcoming Tokens Improves Language Modeling",
+    "authors": [
+      "Zayd M. K. Zuhri",
+      "Erland Hilman Fuadi",
+      "Alham Fikri Aji"
+    ],
+    "year": 2026,
+    "venue": "ICML",
+    "kind": "Conference",
+    "selected": true,
+    "summary": "An auxiliary training objective that learns the relative order of future tokens using a ranking loss.",
+    "paper": "https://icml.cc/virtual/2026/poster/60781",
+    "poster": "https://icml.cc/media/PosterPDFs/ICML%202026/60781.png?t=1783257948.0394883",
+    "image": "/assets/publications/token-order-prediction-poster.png",
+    "imageAlt": "ICML 2026 poster for Predicting the Order of Upcoming Tokens Improves Language Modeling, showing the token order prediction architecture and results.",
+    "imageWidth": 2859,
+    "imageHeight": 2033,
+    "pdf": "https://arxiv.org/pdf/2508.19228",
+    "code": "https://github.com/zaydzuhri/token-order-prediction"
+  },
+  {
+    "id": "softpick",
+    "title": "Softpick: No Attention Sink, No Massive Activations with Rectified Softmax",
+    "authors": [
+      "Zayd Muhammad Kawakibi Zuhri",
+      "Erland Hilman Fuadi",
+      "Alham Fikri Aji"
+    ],
+    "year": 2026,
+    "venue": "Findings of ACL",
+    "kind": "Conference",
+    "selected": true,
+    "summary": "Rethinking attention normalization to eliminate attention sinks and massive activations, with implications for quantization and sparsity.",
+    "paper": "https://aclanthology.org/2026.findings-acl.905/",
+    "pdf": "https://aclanthology.org/2026.findings-acl.905.pdf",
+    "code": "https://github.com/zaydzuhri/softpick-attention"
+  },
+  {
+    "id": "lingudistill",
+    "title": "LinguDistill: Recovering Linguistic Ability in Vision-Language Models via Selective Cross-Modal Distillation",
+    "authors": [
+      "Patrick Amadeus Irawan",
+      "Erland Hilman Fuadi",
+      "Shanu Kumar",
+      "Alham Fikri Aji",
+      "Yova Kementchedjhieva"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "kind": "Preprint",
+    "selected": false,
+    "summary": "Recovering language capabilities after multimodal adaptation through selective distillation from the original language model.",
+    "paper": "https://arxiv.org/abs/2604.00829",
+    "pdf": "https://arxiv.org/pdf/2604.00829"
+  },
+  {
+    "id": "copal-id",
+    "title": "COPAL-ID: Indonesian Language Reasoning with Local Culture and Nuances",
+    "authors": [
+      "Haryo Akbarianto Wibowo",
+      "Erland Hilman Fuadi",
+      "Made Nindyatama Nityasya",
+      "Radityo Eko Prasojo",
+      "Alham Fikri Aji"
+    ],
+    "year": 2024,
+    "venue": "NAACL",
+    "kind": "Conference",
+    "selected": true,
+    "summary": "Evaluating commonsense reasoning grounded in Indonesian culture, in both standard and colloquial Indonesian.",
+    "paper": "https://aclanthology.org/2024.naacl-long.77/",
+    "pdf": "https://aclanthology.org/2024.naacl-long.77.pdf",
+    "code": "https://github.com/haryoa/COPAL-ID"
+  },
+  {
+    "id": "gated-self-supervised-learning",
+    "title": "Gated Self-supervised Learning for Improving Supervised Learning",
+    "authors": [
+      "Erland Hilman Fuadi",
+      "Aristo Renaldo Ruslim",
+      "Putu Wahyu Kusuma Wardhana",
+      "Novanto Yudistira"
+    ],
+    "year": 2024,
+    "venue": "IEEE CAI",
+    "kind": "Conference",
+    "selected": false,
+    "summary": "Combining self-supervised image transformations with a gating mechanism for supervised image classification.",
+    "paper": "https://doi.org/10.1109/CAI59869.2024.00120",
+    "pdf": "https://arxiv.org/pdf/2301.05865"
+  },
+  {
+    "id": "driver-distraction",
+    "title": "Classification Comparison of Activity Distraction Detection in Car Driving",
+    "authors": [
+      "Fitra Abdurrachman Bachtiar",
+      "Ferry Ardianto Rismawan",
+      "Erland Hilman Fuadi",
+      "Novanto Yudistira",
+      "Lailil Muflikhah"
+    ],
+    "year": 2022,
+    "venue": "SIET",
+    "kind": "Conference",
+    "selected": false,
+    "summary": "Comparing classification approaches for recognizing distracting activities during driving.",
+    "paper": "https://doi.org/10.1145/3568231.3568236"
+  }
+]

@@ -77,6 +77,10 @@ The repository previously published the root of `main` through Jekyll. This vers
 
 The profile README is in the separate sibling repository `../Erland366/README.md`; commit and push that repository separately when ready. It links to the new website, so publish the website first.
 
+## Search engine verification
+
+`public/googlea3642c7d280c95c7.html` is the Google Search Console ownership file for `https://erland366.github.io/`. It is served unchanged at the site root. Keep it; removing it unverifies the site in Search Console. The sitemap to submit there is `sitemap.xml`.
+
 ## Existing demos
 
 The previous homepage is preserved at `/demos/image-classifier.html`. The existing `/llm.html` URL is preserved. Their source now lives under `public/`; these legacy demos retain their original dependencies and were not modernized with the site.

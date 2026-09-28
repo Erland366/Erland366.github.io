@@ -112,6 +112,7 @@ for (const file of [
   ".nojekyll",
   "llm.html",
   "demos/image-classifier.html",
+  "googlea3642c7d280c95c7.html",
 ])
   check(existsSync(join(root, file)), `Missing output: ${file}`);
 assert.equal(errors.length, 0, errors.join("\n"));

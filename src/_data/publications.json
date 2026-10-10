@@ -1,5 +1,26 @@
 [
   {
+    "id": "cross-vendor-mismatch",
+    "title": "Measuring and Reducing Cross-Vendor Mismatch in Language Models",
+    "authors": [
+      "Erland Hilman Fuadi",
+      "Chong Tian",
+      "Xiaosong Ma",
+      "Qirong Ho"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "kind": "Preprint",
+    "selected": false,
+    "paper": "https://arxiv.org/abs/2610.05458",
+    "pdf": "https://arxiv.org/pdf/2610.05458",
+    "code": "https://github.com/crova-project/crova",
+    "image": "/assets/publications/cross-vendor-mismatch-figure1.png",
+    "imageAlt": "Figure 1 from the paper: cross-vendor mismatch spans the execution hierarchy, from model and framework down through kernels, compiler lowering, native instructions and matrix-core arithmetic.",
+    "imageWidth": 1550,
+    "imageHeight": 640
+  },
+  {
     "id": "copus",
     "title": "COPUS: Co-adaptive Parallelism and Batch Size Selection in Large Language Model Training",
     "authors": [
@@ -17,7 +38,6 @@
     "venue": "arXiv",
     "kind": "Preprint",
     "selected": true,
-    "summary": "Jointly adapting batch size and parallelism to improve useful training progress per unit of time.",
     "paper": "https://arxiv.org/abs/2604.26687",
     "pdf": "https://arxiv.org/pdf/2604.26687"
   },
@@ -33,7 +53,6 @@
     "venue": "ICML",
     "kind": "Conference",
     "selected": true,
-    "summary": "An auxiliary training objective that learns the relative order of future tokens using a ranking loss.",
     "paper": "https://icml.cc/virtual/2026/poster/60781",
     "poster": "https://icml.cc/media/PosterPDFs/ICML%202026/60781.png?t=1783257948.0394883",
     "image": "/assets/publications/token-order-prediction-poster.png",
@@ -55,7 +74,6 @@
     "venue": "Findings of ACL",
     "kind": "Conference",
     "selected": true,
-    "summary": "Rethinking attention normalization to eliminate attention sinks and massive activations, with implications for quantization and sparsity.",
     "paper": "https://aclanthology.org/2026.findings-acl.905/",
     "pdf": "https://aclanthology.org/2026.findings-acl.905.pdf",
     "code": "https://github.com/zaydzuhri/softpick-attention"
@@ -74,7 +92,6 @@
     "venue": "arXiv",
     "kind": "Preprint",
     "selected": false,
-    "summary": "Recovering language capabilities after multimodal adaptation through selective distillation from the original language model.",
     "paper": "https://arxiv.org/abs/2604.00829",
     "pdf": "https://arxiv.org/pdf/2604.00829"
   },
@@ -92,7 +109,6 @@
     "venue": "NAACL",
     "kind": "Conference",
     "selected": true,
-    "summary": "Evaluating commonsense reasoning grounded in Indonesian culture, in both standard and colloquial Indonesian.",
     "paper": "https://aclanthology.org/2024.naacl-long.77/",
     "pdf": "https://aclanthology.org/2024.naacl-long.77.pdf",
     "code": "https://github.com/haryoa/COPAL-ID"
@@ -110,7 +126,6 @@
     "venue": "IEEE CAI",
     "kind": "Conference",
     "selected": false,
-    "summary": "Combining self-supervised image transformations with a gating mechanism for supervised image classification.",
     "paper": "https://doi.org/10.1109/CAI59869.2024.00120",
     "pdf": "https://arxiv.org/pdf/2301.05865"
   },
@@ -128,7 +143,6 @@
     "venue": "SIET",
     "kind": "Conference",
     "selected": false,
-    "summary": "Comparing classification approaches for recognizing distracting activities during driving.",
     "paper": "https://doi.org/10.1145/3568231.3568236"
   }
 ]

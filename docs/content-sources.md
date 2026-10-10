@@ -17,10 +17,11 @@ Checked on 20 September 2026. This is an editorial record for the website, not a
 
 ## Publications
 
-All seven entries were cross-checked against Scholar. Titles and venue status use publisher or manuscript records. Short descriptions are editorial paraphrases; they do not claim that Erland individually led every coauthored work.
+Entries were cross-checked against Scholar. Titles and venue status use publisher or manuscript records. Short descriptions are editorial paraphrases; they do not claim that Erland individually led every coauthored work.
 
 | Work | Primary record | Status used |
 | --- | --- | --- |
+| Cross-Vendor Mismatch | [arXiv](https://arxiv.org/abs/2610.05458) | Preprint, 2026 (added 11 October 2026 from the author-supplied v1 PDF; title, authors and code link read from it) |
 | Softpick | [ACL Anthology](https://aclanthology.org/2026.findings-acl.905/), [arXiv](https://arxiv.org/abs/2504.20966) | Findings of ACL 2026 |
 | COPUS | [arXiv](https://arxiv.org/abs/2604.26687) | Preprint, 2026 |
 | LinguDistill | [arXiv](https://arxiv.org/abs/2604.00829) | Preprint, 2026 |

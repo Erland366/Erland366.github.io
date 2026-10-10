@@ -4,6 +4,7 @@ description: Notes on the systems questions that grew out of my work on language
 date: 2026-09-20
 topic: Personal
 draft: true
+hidden: true
 ---
 
 I’m starting this blog as a place to think through research in writing.

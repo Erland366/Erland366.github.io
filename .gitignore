@@ -3,3 +3,6 @@ _site/
 _drafts/
 .DS_Store
 .cache/
+
+# large run archives
+*.tgz

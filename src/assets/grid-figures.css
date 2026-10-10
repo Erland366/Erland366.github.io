@@ -1,0 +1,21 @@
+.gfig { margin: 8px 0 24px; border: 1px solid var(--line); border-radius: 6px; padding: 14px; background: var(--soft); }
+.gfig .cap { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin: 0 0 6px; }
+.gfig .look { font-size: 14px; line-height: 1.5; margin: 0 0 12px; }
+.gfig .ctl { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+.gfig .ctl label { display: flex; align-items: center; gap: 8px; }
+.gfig .ctl select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 3px; padding: 3px 6px; }
+.gfig .ctl input[type=range] { accent-color: var(--accent); width: 140px; }
+.gfig .ctl output { color: var(--ink); min-width: 3ch; display: inline-block; }
+.gfig .order h4 { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 14px 0 6px; font-weight: 500; }
+.gfig .order .res { display: block; margin-top: 4px; color: var(--ink); text-transform: none; letter-spacing: 0; font-size: 13px; line-height: 1.45; }
+.gfig .strip-wrap { overflow-x: auto; padding-bottom: 2px; }
+.gfig .wave { display: flex; gap: 3px; padding: 5px; border-radius: 3px; margin-bottom: 4px; width: max-content; max-width: 100%; flex-wrap: wrap; align-items: center; }
+.gfig .wave.w0 { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.gfig .wave.w1 { background: color-mix(in srgb, var(--muted) 18%, transparent); }
+.gfig .wlabel { font-size: 11px; line-height: 1; color: var(--muted); margin-right: 4px; white-space: nowrap; }
+.gfig .cell { border: 0; padding: 0; border-radius: 2px; flex: none; cursor: pointer; width: 14px; height: 14px; color: #fff; font-size: 10px; line-height: 1; }
+.gfig.big .cell { width: 34px; height: 30px; font-size: 12px; }
+.gfig .cell:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+.gfig .dim .cell:not(.hl) { opacity: .28; }
+.gfig .cell.hl { outline: 2px solid var(--ink); outline-offset: 1px; }
+.gfig .note { font-size: 13px; color: var(--muted); margin: 10px 0 0; }

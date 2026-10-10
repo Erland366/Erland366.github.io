@@ -6,7 +6,6 @@
   <div class="publication-body">
     <h{{ paperHeading or 3 }}><a href="{{ paper.paper }}">{{ paper.title }}</a></h{{ paperHeading or 3 }}>
     <p class="authors">{% for author in paper.authors %}{% if author == site.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</p>
-    <p class="paper-summary">{{ paper.summary }}</p>
     <div class="paper-links">
       <a href="{{ paper.paper }}">{% if paper.kind == 'Preprint' %}Preprint{% else %}Paper{% endif %}<span class="sr-only">: {{ paper.title }}</span></a>
       {% if paper.pdf %}<a href="{{ paper.pdf }}">PDF<span class="sr-only">: {{ paper.title }}</span></a>{% endif %}

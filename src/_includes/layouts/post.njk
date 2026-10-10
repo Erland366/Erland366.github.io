@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 <article>
-  <header class="page-heading post-heading"><a class="back-link" href="/blog/">← All writing</a>{% if draft %}<p class="draft-label">Unpublished draft</p>{% endif %}<h1>{{ title }}</h1><p class="post-description">{{ description }}</p><p class="byline">By <a href="/" rel="author">{{ site.blogAuthor }}</a></p><div class="post-meta"><time datetime="{{ page.date | isoDate }}">{{ page.date | displayDate }}</time> · {{ content | readingTime }} min read{% if topic %} · {{ topic }}{% endif %}</div></header>
+  <header class="page-heading post-heading"><a class="back-link" href="/blog/">← All writing</a>{% if draft %}<p class="draft-label">Unpublished draft</p>{% endif %}<h1>{{ title }}</h1><p class="byline">By <a href="/" rel="author">{{ site.blogAuthor }}</a></p><div class="post-meta"><time datetime="{{ page.date | isoDate }}">{{ page.date | displayDate }}</time> · {{ content | readingTime }} min read{% if topic %} · {{ topic }}{% endif %}</div></header>
   <div class="prose">{{ content | safe }}</div>
   <footer class="post-footer"><p>Thanks for reading. Questions or ideas? <a href="mailto:{{ site.email }}">Let’s talk.</a></p><a href="/blog/">← Back to the blog</a></footer>
 </article>

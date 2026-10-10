@@ -13,13 +13,14 @@
   <meta property="og:title" content="{{ title or site.name }}">
   <meta property="og:description" content="{{ description or site.description }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:image" content="{{ site.url }}/assets/profile.jpg">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="{{ site.url }}{{ image or '/assets/profile.jpg' }}">
+  <meta name="twitter:card" content="{% if image %}summary_large_image{% else %}summary{% endif %}">
   <meta name="twitter:creator" content="{{ site.twitter | replace('https://x.com/', '@') }}">
   {% if isPost %}<meta property="article:author" content="{{ site.twitter }}">{% endif %}
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} — Blog" href="/feed.xml">
   <link rel="stylesheet" href="/assets/style.css">
+  {% if isPost %}<link rel="stylesheet" href="/assets/katex/katex.min.css">{% endif %}
   <script src="/assets/theme.js"></script>
   <script src="/assets/site.js" defer></script>
 </head>
